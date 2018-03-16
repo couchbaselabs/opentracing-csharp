@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\common.props" />
-
   <PropertyGroup>
+
     <TargetFrameworks>net45;netstandard1.5</TargetFrameworks>
     <Description>NOTE: THIS IS A SIGNED VERSION FOR CouchbaseNetClient 2.5.X SPECIFICALLY! USE THE OFFICAL OpenTracing NuGet PACKAGE FOR ALL OTHER USES!</Description>
     <PackageTags>opentracing;distributed-tracing;tracing;logging</PackageTags>
@@ -22,5 +21,13 @@
     <RepositoryUrl>git://github.com/opentracing/opentracing-csharp</RepositoryUrl>
     <AssemblyName>OpenTracing.Signed</AssemblyName>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(OS)'=='Windows_NT'">
+    <TargetFrameworks>$(TargetFrameworks);net45</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+    <Reference Include="System.Runtime.Remoting" />
+  </ItemGroup>
 
 </Project>
