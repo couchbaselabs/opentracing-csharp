@@ -1,12 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;netstandard2.0</TargetFrameworks>
-    <IsPackable>true</IsPackable>
-    <Description>This library is a .NET implementation of the OpenTracing API. To fully understand this platform API, it's helpful to be familiar with the OpenTracing project and terminology more generally.
 
-For the time being, mild backwards-incompatible changes may be made without changing the major version number. As OpenTracing and opentracing-csharp mature, backwards compatibility will become more of a priority.</Description>
+    <TargetFrameworks>net45;netstandard1.5</TargetFrameworks>
+    <Description>NOTE: THIS IS A SIGNED VERSION FOR CouchbaseNetClient 2.5.X SPECIFICALLY! USE THE OFFICAL OpenTracing NuGet PACKAGE FOR ALL OTHER USES!</Description>
     <PackageTags>opentracing;distributed-tracing;tracing;logging</PackageTags>
+    <PackageId>OpenTracing.Signed</PackageId>
+    <Authors>The OpenTracing Authors</Authors>
+    <Company>The OpenTracing Authors</Company>
+    <Product>OpenTracing.Signed</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+    <Version>0.10.2</Version>
+
+    <PackageIconUrl>https://raw.githubusercontent.com/couchbaselabs/opentracing-csharp/master/open-tracing-couchbase.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/opentracing/opentracing-csharp</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/opentracing/opentracing-csharp/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/opentracing/opentracing-csharp</RepositoryUrl>
+    <AssemblyName>OpenTracing.Signed</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(OS)'=='Windows_NT'">
