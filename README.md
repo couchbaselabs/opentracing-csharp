@@ -4,7 +4,7 @@
 
 This solution includes the .NET platform API for OpenTracing.
 
-## NOTE: Not supported under Couchbase Enterprise Support Subscriptions! ##
+*NOTE:* This is not an officially supported Couchbase project covered by Couchbase Support Subscriptions.
 
 ## Required Reading
 
